@@ -39,20 +39,10 @@ RUN apt install -y google-chrome-stable
 
 FROM ORACLE_NODE_CHROME
 
-RUN mkdir /tester
-COPY sources /tester/sources
-RUN ls /tester/sources
-WORKDIR /tester/sources
-
-RUN npm install
 RUN npm install -g testcafe
 
 COPY entry-point.sh /
 RUN chmod a+x /entry-point.sh
-
-USER root
-
-VOLUME [ "/github/workspace" ]
 
 ENTRYPOINT [ "/entry-point.sh" ]
 CMD []
