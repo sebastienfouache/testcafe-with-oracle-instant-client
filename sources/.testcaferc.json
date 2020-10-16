@@ -1,0 +1,9 @@
+{
+    "browsers": ["chrome", "firefox:headless", "remote"],
+    "screenshots": {
+        "path": "reports/screenshots/",
+        "takeOnFails": true,
+        "pathPattern": "test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png"
+    },
+    "tsConfigPath" : "./tsconfig.json"
+}

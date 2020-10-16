@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@types/node": "^14.11.8",
+    "oracledb": "^5.0.0",
+    "testcafe": "^1.9.4"
+  }
+}

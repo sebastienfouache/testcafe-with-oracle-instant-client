@@ -1,0 +1,17 @@
+name: "Test cafe with oracle client"
+description: "Test cafe with oracle client"
+inputs:
+    browser:
+        description: "Browser"
+        required: true
+        default: '"chrome:headless"'
+    testName:
+        description: "Test name"
+        required: true
+        default: ''
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.browser }}
+    - ${{ inputs.testName }}
