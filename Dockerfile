@@ -50,5 +50,7 @@ RUN npm install -g testcafe
 COPY entry-point.sh /
 RUN chmod a+x /entry-point.sh
 
+USER root
+
 ENTRYPOINT [ "/entry-point.sh" ]
 CMD []
