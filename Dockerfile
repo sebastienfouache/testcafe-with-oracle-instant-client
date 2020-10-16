@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM alpine:3.10
 
-ENTRYPOINT ["ls -l"]
+ENTRYPOINT ["ls", "-l"]
 
 # # INSTALL UBUNTU
 # FROM node:latest AS ORACLE_NODE
