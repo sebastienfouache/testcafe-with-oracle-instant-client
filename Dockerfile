@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM alpine:3.10
 
-
+ENTRYPOINT ["/bin/sh"]
 
 # # INSTALL UBUNTU
 # FROM node:latest AS ORACLE_NODE
