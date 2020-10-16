@@ -52,5 +52,7 @@ RUN chmod a+x /entry-point.sh
 
 USER root
 
+VOLUME [ "/github/workspace" ]
+
 ENTRYPOINT [ "/entry-point.sh" ]
 CMD []
